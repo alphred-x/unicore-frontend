@@ -1,16 +1,70 @@
-# React + Vite
+# UniCore Frontend: The Campus Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **React Frontend** for UniCore, a resilient and modern campus management system. It serves as the user interface for students and faculty to access the system, designed to be fast, responsive, and easy to use.
 
-Currently, two official plugins are available:
+It connects to the UniCore Backend via REST APIs to handle secure login and data management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Key Features
 
-## React Compiler
+* **Modern UI:** Built with React for a fast, single-page application experience.
+* **Secure Login:** Integrated with the Backend to handle JWT (JSON Web Token) authentication.
+* **Fast Performance:** Powered by Vite for lightning-fast development and loading speeds.
+* **Responsive Design:** Clean interface accessible on various screen sizes.
+* **Real-time Feedback:** Instant success/error messages for user actions (like Login).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technology Stack
 
-## Expanding the ESLint configuration
+* **Framework:** React.js (v18)
+* **Build Tool:** Vite
+* **Language:** JavaScript (ES6+)
+* **HTTP Client:** Axios
+* **Styling:** CSS Modules / Standard CSS
+* **IDE:** IntelliJ IDEA / VS Code
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Getting Started
+
+Follow these steps to set up the frontend on your local machine.
+
+### Prerequisites
+* **Node.js** (v18 or higher) installed.
+* The **UniCore Backend** must be running on port `8080`.
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/YOUR_GITHUB_USERNAME/unicore-frontend.git](https://github.com/YOUR_GITHUB_USERNAME/unicore-frontend.git)
+    cd unicore-frontend
+    ```
+
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the Application**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in Browser**
+    * The app will start at: `http://localhost:5173`
+
+## 🧪 Testing the Login
+
+To test the connection with the backend, you can use the demo credentials:
+
+* **Email:** `demo.user@unicore.com`
+* **Password:** `securePass123`
+
+## 📂 Project Structure
+
+```text
+unicore-frontend/
+├── src/
+│   ├── Login.jsx       # The main login component
+│   ├── App.jsx         # Main application entry point
+│   ├── main.jsx        # React DOM rendering
+│   └── index.css       # Global styles
+├── package.json        # Dependencies and scripts
+└── vite.config.js      # Vite configuration
